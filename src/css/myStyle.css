@@ -1,0 +1,140 @@
+body{
+     overflow-x: hidden; /*horizontal */
+     overflow-y: scroll; /*vertical */
+}
+
+
+ /* .dropdown {
+     position: relative;
+     display: inline-block;
+ } */
+ /* .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     min-width: 300px;
+     z-index: 1;
+     border:gray;
+     border-width: 2px;
+ } */
+ /* .dropdown-content a {
+     color: black;
+     padding: #px #px;
+     text-decoration: none;
+     display: block;
+ } */
+ /* .dropdown-content a:hover {
+      background-color: rgb(68, 125, 231);
+      color:white;
+} */
+/* .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {color: white;} */
+
+
+  /* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hoverable {
+     position: static;
+   }
+ 
+   .hoverable > a:after {
+     content: "\25BC";
+     font-size: 10px;
+     padding-left: 6px;
+     position: relative;
+     top: -1px;
+   }
+ 
+   .hoverable:hover .mega-menu {
+     display: block;
+   }
+
+   
+  /* #Mega Menu Styles desktop
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .mega-menu {
+     display: none;
+     left: 30px;
+     position: absolute;
+     margin-top: 8px;
+     text-align: left;
+     
+     
+   }
+
+  /* #Mega Menu Styles desktop
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .rv-menu {
+     display: none;
+     left: 28px;     
+     position: absolute;
+     margin-top: 8px;
+     width: 50%;
+   }
+   .hoverable:hover .rv-menu {
+     display: block;
+   }
+
+    /* #flexi-color
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+   .navb{
+        background: #f2b927;
+   }
+
+   .nxText{
+        color: #f2b927;
+   }
+
+   .flexi-color{
+     color: #f0b213;
+     }
+
+     /* carousel 
+     ------------------------------------------------*/
+     .carousel-open:checked + .carousel-item {
+          position: static;
+          opacity: 100;
+     }
+     .carousel-item {
+          -webkit-transition: opacity 0.6s ease-out;
+          transition: opacity 0.6s ease-out;
+     }
+     #carousel-1:checked ~ .control-1,
+     #carousel-2:checked ~ .control-2,
+     #carousel-3:checked ~ .control-3 {
+          display: block;
+     }
+     .carousel-indicators {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          bottom: 2%;
+          left: 0;
+          right: 0;
+          text-align: center;
+          z-index: 10;
+     }
+     #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+     #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+     #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+          color: #f0b213;  /*Set to match the Tailwind colour you want the active one to be */
+     }
+
+     .imageOne{
+          background-image: url('/images/b1-1.jpg');
+          height: 260px;
+          
+     }
+     .imageTwo{
+          background-image: url('/images/b2-1.jpg');
+          height: 260px;
+     }
+
+
+
+     /* --------------dashboard------------- */
+     /* sidebar */
+.sidebar{
+     height:650px;
+}
